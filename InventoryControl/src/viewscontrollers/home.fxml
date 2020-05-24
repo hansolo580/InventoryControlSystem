@@ -4,14 +4,14 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="1022.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewscontrollers.Controller">
     <children>
         <Label layoutX="20.0" layoutY="54.0" text="Inventory Management System" textFill="#2a34a1">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
         </Label>
-        <Button layoutX="893.0" layoutY="400.0" mnemonicParsing="false" text="Exit" textAlignment="CENTER" />
+        <Button layoutX="893.0" layoutY="400.0" mnemonicParsing="false" onAction="#Quit" text="Exit" textAlignment="CENTER" />
         <FlowPane layoutX="67.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0" />
         <FlowPane layoutX="541.0" layoutY="128.0" prefHeight="200.0" prefWidth="416.0" style="-fx-border-width: 2; -fx-border-color: darkgrey;">
             <children>
@@ -27,8 +27,8 @@
                     </columns>
                 </TableView>
                 <Label prefHeight="17.0" prefWidth="241.0" />
-                <Button mnemonicParsing="false" text="Add" />
-                <Button mnemonicParsing="false" text="Modify" />
+                <Button mnemonicParsing="false" onAction="#changeScreenAddProduct" text="Add" />
+                <Button mnemonicParsing="false" onAction="#changeScreenModifyProduct" text="Modify" />
                 <Button mnemonicParsing="false" text="Delete" />
             </children>
         </FlowPane>
@@ -36,7 +36,7 @@
             <children>
                 <Label prefHeight="17.0" prefWidth="216.0" text="Parts" />
                 <Button mnemonicParsing="false" style="-fx-padding: 2;" text="Search" />
-                <TextField prefHeight="25.0" prefWidth="174.0" style="-fx-padding: 2;" />
+                <TextField onAction="#PartSearch" prefHeight="25.0" prefWidth="174.0" style="-fx-padding: 2;" />
                 <TableView prefHeight="200.0" prefWidth="430.0">
                     <columns>
                         <TableColumn prefWidth="108.0" text="Part ID" />
