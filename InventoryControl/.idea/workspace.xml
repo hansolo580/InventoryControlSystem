@@ -19,23 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f81d4e5-5968-4574-be60-3d0d9cbfc271" name="Default Changelist" comment="Wireframes in place for all views. Implemented appropriate radio button displays for part management screens.">
-      <change afterPath="$PROJECT_DIR$/src/models/InHouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Inventory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Outsourced.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Part.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Product.java" afterDir="false" />
+    <list default="true" id="3f81d4e5-5968-4574-be60-3d0d9cbfc271" name="Default Changelist" comment="Most UI setup complete. Classes and most methods complete. Search appears functional - pending correct data load method creation for appropriate testing.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InventoryControl/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InventoryControl/sample/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/InventoryControl/sample/sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/AddPartView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/AddPartView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/AddProductView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/AddProductView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ModifyPartView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/ModifyPartView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ModifyProductView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/ModifyProductView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/home.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/InHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/InHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Outsourced.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Outsourced.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewscontrollers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/viewscontrollers/home.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/viewscontrollers/home.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1590316953745</updated>
       <workItem from="1590316955253" duration="24000" />
-      <workItem from="1590317005655" duration="24202000" />
+      <workItem from="1590317005655" duration="36832000" />
     </task>
     <task id="LOCAL-00001" summary="Created Main Screen layout">
       <created>1590320307528</created>
@@ -132,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590336855681</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Most UI setup complete. Classes and most methods complete. Search appears functional - pending correct data load method creation for appropriate testing.">
+      <created>1590356231907</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590356231907</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,17 +150,18 @@
     <MESSAGE value="Created Main Screen layout" />
     <MESSAGE value="Added in add part screen, method for progressing to next scene." />
     <MESSAGE value="Wireframes in place for all views. Implemented appropriate radio button displays for part management screens." />
-    <option name="LAST_COMMIT_MESSAGE" value="Wireframes in place for all views. Implemented appropriate radio button displays for part management screens." />
+    <MESSAGE value="Most UI setup complete. Classes and most methods complete. Search appears functional - pending correct data load method creation for appropriate testing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Most UI setup complete. Classes and most methods complete. Search appears functional - pending correct data load method creation for appropriate testing." />
   </component>
   <component name="WindowStateProjectService">
     <state x="2334" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590317835776">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2334" y="180" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590317835776" />
-    <state x="2685" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1590344778360">
+    <state x="2685" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1590410178163">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2685" y="241" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590344778360" />
+    <state x="2685" y="241" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590410178163" />
     <state x="2610" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590320609076">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
@@ -172,34 +170,38 @@
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2586" y="266" key="FileChooserDialogImpl/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590317679167" />
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1590355943597">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom" timestamp="1590488519422">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590355943597" />
-    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1590355943595">
+    <state width="1877" height="316" key="GridCell.Tab.0.bottom/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590488519422" />
+    <state width="1877" height="316" key="GridCell.Tab.0.center" timestamp="1590488519421">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590355943595" />
-    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1590355943594">
+    <state width="1877" height="316" key="GridCell.Tab.0.center/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590488519421" />
+    <state width="1877" height="316" key="GridCell.Tab.0.left" timestamp="1590488519421">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590355943594" />
-    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1590355943597">
+    <state width="1877" height="316" key="GridCell.Tab.0.left/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590488519421" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right" timestamp="1590488519422">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="316" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590355943597" />
+    <state width="1877" height="316" key="GridCell.Tab.0.right/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590488519422" />
     <state x="2360" y="99" key="SettingsEditor" timestamp="1590317686928">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2360" y="99" key="SettingsEditor/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590317686928" />
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1590336857738">
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2" timestamp="1590356234731">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590336857738" />
+    <state x="2472" y="258" key="Vcs.Push.Dialog.v2/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590356234731" />
     <state x="2163" y="123" width="1652" height="912" key="dock-window-1" timestamp="1590350341861">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>
     <state x="2163" y="123" width="1652" height="912" key="dock-window-1/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590350341861" />
+    <state x="2675" y="272" key="refactoring.ChangeSignatureDialog" timestamp="1590412061256">
+      <screen x="1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="2675" y="272" key="refactoring.ChangeSignatureDialog/1920.0.1920.1050/0.0.1920.1050@1920.0.1920.1050" timestamp="1590412061256" />
     <state x="2543" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1590351693235">
       <screen x="1920" y="0" width="1920" height="1050" />
     </state>

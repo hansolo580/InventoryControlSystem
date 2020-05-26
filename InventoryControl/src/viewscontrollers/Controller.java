@@ -23,6 +23,20 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
+    private void initialize() {
+
+    }
+
+    public Controller() {
+
+    }
+
+    Inventory currentInventory;
+
+    public Controller(Inventory currentInventory) {
+        this.currentInventory = currentInventory;
+    }
+
     @FXML private Label partLabel;
 
     @FXML void AddPartButtonInternal(ActionEvent event) {
@@ -115,6 +129,7 @@ public class Controller implements Initializable {
     @FXML private TextField PartSearchField;
     @FXML private ObservableList<Part> PartsSearchInventory = FXCollections.observableArrayList();
 
+
     @FXML void AddPartsSave(ActionEvent event) throws IOException {
         int id = Integer.parseInt(NewIDField.getText());
         String name = NewNameField.getText();
@@ -122,30 +137,15 @@ public class Controller implements Initializable {
         Double price = Double.parseDouble(NewPriceField.getText());
         int min = Integer.parseInt(NewMinField.getText());
         int max = Integer.parseInt(NewMaxField.getText());
+        String diverter = partLabel.getText();
         String flex = NewFlexField.getText();
 
-        if (flex == "In-House") {
-            InHouse newPart = new InHouse();
 
-            newPart.setID(id);
-            newPart.setName(name);
-            newPart.setStock(stock);
-            newPart.setPrice(price);
-            newPart.setMin(min);
-            newPart.setMax(max);
-            newPart.setMachineID(Integer.parseInt(flex));
+        if (diverter.equals("Machine ID")) {
+            currentInventory.addPart(new InHouse(id, name, stock, price, min, max, Integer.parseInt(flex)));
         }
         else {
-            Outsourced newPart = new Outsourced();
-
-            newPart.setID(id);
-            newPart.setName(name);
-            newPart.setStock(stock);
-            newPart.setPrice(price);
-            newPart.setMin(min);
-            newPart.setMax(max);
-            newPart.setCompanyName(flex);
-
+            currentInventory.addPart(new Outsourced(id, name, stock, price, min, max, flex));
         }
         Parent savedPart = FXMLLoader.load(getClass().getResource("home.fxml"));
         Scene scene = new Scene(savedPart);
@@ -156,17 +156,18 @@ public class Controller implements Initializable {
 
     @FXML void DeleteParts(ActionEvent event) throws IOException {
         Part activePart = HomePartsTableView.getSelectionModel().getSelectedItem();
-        Inventory.deletePart(activePart);
+        currentInventory.deletePart(activePart);
     }
 
     @FXML private void PartSearch(ActionEvent event) {
         if (!PartSearchField.getText().trim().isEmpty()) {
-           HomePartsTableView.setItems(Inventory.lookupPart(PartSearchField.getText()));
+           HomePartsTableView.setItems(currentInventory.lookupPart(PartSearchField.getText()));
         }
     }
 
     @FXML private void loadParts() {
-        HomePartsTableView.setItems(Inventory.getAllParts());
+        HomePartsTableView.setItems(currentInventory.getAllParts());
+        HomePartsTableView.refresh();
     }
 
     //product management
@@ -184,13 +185,16 @@ public class Controller implements Initializable {
 
     @FXML void DeleteProducts(ActionEvent event) throws IOException {
         Product activeProduct = ProductsTableView.getSelectionModel().getSelectedItem();
-        Inventory.deleteProduct(activeProduct);
+        currentInventory.deleteProduct(activeProduct);
     }
 
     @FXML private void ProductSearch(ActionEvent event) {
-        if (!PartSearchField.getText().isEmpty()) {
-            ProductsTableView.setItems(Inventory.lookupProduct(ProductSearchField.getText()));
-        }
+            ProductsTableView.setItems(currentInventory.lookupProduct(ProductSearchField.getText()));
+    }
+
+    @FXML private void loadProducts() {
+        ProductsTableView.setItems(currentInventory.getAllProducts());
+        ProductsTableView.refresh();
     }
 
 

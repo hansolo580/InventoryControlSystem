@@ -10,7 +10,8 @@ public class Inventory {
    // private final Part newPart;
     //private final Product newProduct;
 
-
+    public Inventory() {
+    }
     //adds
 
     public static void addPart(Part newPart) {
@@ -23,7 +24,7 @@ public class Inventory {
 
     //lookups
 
-    public static Part lookupPart(int partId) {
+    public Part lookupPart(int partId) {
         for (int i = 0; i < part.size(); i++) {
             if (part.get(i).getID() == partId) {
                 return part.get(i);
@@ -41,7 +42,7 @@ public class Inventory {
         return null;
     }
 
-    public static ObservableList<Part> lookupPart(String partName) {
+    public ObservableList<Part> lookupPart(String partName) {
         ObservableList partSearchResults = FXCollections.observableArrayList();
         for (Part j : getAllParts()) {
             if (j.getName().contains(partName)) {
@@ -52,7 +53,7 @@ public class Inventory {
         return null;
     }
 
-    public static ObservableList<Product> lookupProduct(String productName) {
+    public ObservableList<Product> lookupProduct(String productName) {
         ObservableList productSearchResults = FXCollections.observableArrayList();
         for (Product j: getAllProducts()) {
             if (j.getName().contains(productName)) {
@@ -75,23 +76,23 @@ public class Inventory {
 
     //deletes
 
-    public static boolean deletePart(Part selectedPart) {
+    public boolean deletePart(Part selectedPart) {
         part.remove(selectedPart);
         return true;
     }
 
-    public static boolean deleteProduct(Product selectedProduct) {
+    public boolean deleteProduct(Product selectedProduct) {
         product.remove(selectedProduct);
         return true;
     }
 
     //gets
 
-    public static ObservableList<Part> getAllParts(){
+    public ObservableList<Part> getAllParts(){
         return part;
     }
 
-    public static ObservableList<Product> getAllProducts(){
+    public ObservableList<Product> getAllProducts(){
         return product;
     }
 
